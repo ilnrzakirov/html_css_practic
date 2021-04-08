@@ -6,15 +6,19 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lagoona - сеть отелей</title>
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <img src="/img/Logo.png" alt="" class="logo">
-      <a href="tel:74953225448">
-        <strong class="header-tel">+7 495 322 54 48</strong>
-      </a>
-      <a href="" class="go-profile">Личный кабинет</a>
+    <div class="container header-container">
+      <div class="header-logo">
+        <img src="/img/Logo.png" alt="" class="logo">
+        <a href="tel:74953225448" class="tel">
+          <strong class="header-tel">+7 495 322 54 48</strong>
+        </a>
+        <a href="" class="go-profile">Личный кабинет</a>
+      </div>
       <nav class="header-nav">
         <ul class="header-list">
           <li class="header-item">
@@ -37,7 +41,7 @@
           </li>
         </ul>
         <div>
-          <input type="search" class="header-seach" >
+          <input type="search" placeholder="поиск" class="header-seach" >
           <button class="header-btn"></button>
         </div>
       </nav>
@@ -46,9 +50,9 @@
   </header>
   <main>
     <section class="section-hero">
-      <div class="container">
+      <div class="container hero-container">
         <div class="hero-left">
-          <h2 class="h2">Быстрая бронь</h2>
+          <h2 class="h2 speed-h2">Быстрая бронь</h2>
           <ul class="hero-rent-list">
             <li class="hero-rent-item">
               <input type="text" class="hero-rent" placeholder="Город">
@@ -73,7 +77,7 @@
         <div class="hero-right">
           <h2 class="h2">Спецпредложение</h2>
           <div class="hero-right-sale">
-            <h3 class="h3">Номера категории люкс</h3>
+            <h3 class="h3-hero">Номера категории люкс</h3>
             <span class="hero-room-value">от 5000 р</span>
             <a href="">подробнее > </a>
           </div>
@@ -81,7 +85,7 @@
       </div>
     </section>
     <section class="section-about-us">
-      <div class="container">
+      <div class="container about-us-container">
         <h2 class="h2">О нас</h2>
         <p class="about-us-p">
           Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и
@@ -93,35 +97,35 @@
       </div>
     </section>
     <section class="services">
-      <div class="container">
-        <h2 class="h2">Услуги</h2>
+      <div class="container services-container">
+        <h2 class="h2 services-h2">Услуги</h2>
         <ul class="services-list">
           <li class="services-list-item">
             <img src="/img/10.jpg" alt="обслуживание">
-            <a href="" class="services-list-link"><h3>Эксклюзивное обслуживание ></h3></a>
-            <p>Равным образом постоянный количественный рост и сфера нашей активности</p>
+            <h3><a href="" class="services-list-link">Эксклюзивное обслуживание ></a></h3>
+            <p class="services-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
           </li>
-          <li class="services-list-item-right">
+          <li class="services-list-item">
             <img src="/img/15.jpg" alt="Банкетные залы">
-            <a href="" class="services-list-link"><h3>Арнеда банкетных залов ></h3></a>
-            <p>Значимость этих проблем настолькоочевидна, что дальнейшее развитие различных форм</p>
+            <h3><a href="" class="services-list-link">Арнеда банкетных залов ></a></h3>
+            <p class="services-text">Значимость этих проблем настолькоочевидна, что дальнейшее развитие различных форм</p>
           </li>
           <li class="services-list-item">
             <img src="/img/12.jpg" alt="Бассейн">
-            <a href="" class="services-list-link"><h3>Сауны, бассейны, бани, фитнес-залы ></h3></a>
-            <p>Не следует,однако забывать, что начало поседневной работы по формированию позиции</p>
+            <h3><a href="" class="services-list-link">Сауны, бассейны, бани, фитнес-залы ></a></h3>
+            <p class="services-text">Не следует,однако забывать, что начало поседневной работы по формированию позиции</p>
           </li>
-          <li class="services-list-item-right">
+          <li class="services-list-item">
             <img src="/img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg" alt="Паркинг">
-            <a href="" class="services-list-link"><h3>Охраняемые автомобильные стоянки ></h3></a>
-            <p>Не следует, однако забывать, что начало поседневной работы по формированнию позиции</p>
+            <h3><a href="" class="services-list-link">Охраняемые автомобильные стоянки ></a></h3>
+            <p class="services-text">Не следует, однако забывать, что начало поседневной работы по формированнию позиции</p>
           </li>
         </ul>
       </div>
     </section>
     <section class="advantages">
       <div class="container">
-        <h2 class="h2">Преимущества</h2>
+        <h2 class="h2 advantages-h2">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-list-item">
             <div style="background-image: url(/img/bathtub.svg);"></div>
@@ -132,7 +136,7 @@
           <li class="advantages-list-item">
             <div style="background-image: url(/img/hanger.svg);"></div>
             <p class="advantages-description">
-              Значимость этих проблем настолько очевидна, что вопрос остается открытым
+              Значимость этих проблем настолько очевидна, что вопрос остается открытым0
             </p>
           </li>
           <li class="advantages-list-item">
@@ -176,137 +180,169 @@
     </section>
     <section class="placement">
       <div class="container">
-        <h2 class="h2">Размещение</h2>
+        <h2 class="h2 placement-h2">Размещение</h2>
         <ul class="placement-list">
-          <li>
+          <li class="placement-list-item">
             <img src="/img/23.jpg" alt="номер">
             <div class="star">
-              <small class="placement-value prefix">от</small>
-              <strong class="placement-value">4 698 р</strong>
-              <small class="placement-value-item">/ночь</small>
-              <img src="/img/star.svg" alt="4 звезды" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star_not.svg" alt="" class="placement-rating">
+              <div class="placement-room-price">
+                <small class="placement-value prefix">от</small>
+                <strong class="placement-value">4 698 р</strong>
+                <small class="placement-value-item">/ночь</small>
+              </div>
+              <div class="placement-room-star">
+                <img src="/img/star.svg" alt="4 звезды" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star_not.svg" alt="" class="placement-rating">
+              </div>
             </div>
             <h3 class="placement-hotel">Lagoona espanola</h3>
             <div class="placement-geo">Барселона, Испания</div>
             <a href="" class="placement-rooms">Номера</a>
           </li>
-          <li>
+          <li class="placement-list-item">
             <img src="/img/24.jpg" alt="">
             <div class="star">
-              <small class="placement-value prefix">от</small>
-              <strong class="placement-value">от 5 148 р/ночь</strong>
-              <small class="placement-value-item">/ночь</small>
-              <img src="/img/star.svg" alt="4 звезды" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star_not.svg" alt="" class="placement-rating">
+              <div class="placement-room-price">
+                <small class="placement-value prefix">от</small>
+                <strong class="placement-value">от 5 148 р/ночь</strong>
+                <small class="placement-value-item">/ночь</small>
+              </div>
+              <div class="placement-room-star">
+                <img src="/img/star.svg" alt="4 звезды" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star_not.svg" alt="" class="placement-rating">
+              </div>
             </div>
             <h3 class="placement-hotel">Lagoona  son tipicas</h3>
             <div class="placement-geo">Барселона, Испания</div>
             <a href="" class="placement-rooms">Номера</a>
           </li>
-          <li>
+          <li class="placement-list-item">
             <img src="/img/26.jpg" alt="">
             <div class="star">
-              <small class="placement-value prefix">от</small>
-              <strong class="placement-value">от 6 254 р/ночь</strong>
-              <small class="placement-value-item">/ночь</small>
-              <img src="/img/star.svg" alt="5 звезды" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
+              <div class="placement-room-price">
+                <small class="placement-value prefix">от</small>
+                <strong class="placement-value">от 6 254 р/ночь</strong>
+                <small class="placement-value-item">/ночь</small>
+              </div>
+              <div class="placement-room-star">
+                <img src="/img/star.svg" alt="5 звезды" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+              </div>
             </div>
             <h3 class="placement-hotel">Lagoona de la querra</h3>
             <div class="placement-geo">Барселона, Испания</div>
             <a href="" class="placement-rooms">Номера</a>
           </li>
-          <li>
+          <li class="placement-list-item">
             <img src="/img/29.jpg" alt="">
             <div class="star">
-              <small class="placement-value prefix">от</small>
-              <strong class="placement-value">от 6 320 р/ночь</strong>
-              <small class="placement-value-item">/ночь</small>
-              <img src="/img/star.svg" alt="5 звезды" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
+              <div class="placement-room-price">
+                <small class="placement-value prefix">от</small>
+                <strong class="placement-value">от 6 320 р/ночь</strong>
+                <small class="placement-value-item">/ночь</small>
+              </div>
+              <div class="placement-room-star">
+                <img src="/img/star.svg" alt="5 звезды" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+              </div>
             </div>
             <h3 class="placement-hotel">Lagoona mentira piadosa</h3>
             <div class="placement-geo">Барселона, Испания</div>
             <a href="" class="placement-rooms">Номера</a>
           </li>
-          <li>
+          <li class="placement-list-item">
             <img src="/img/30.jpg" alt="">
             <div class="star">
-              <small class="placement-value prefix">от</small>
-              <strong class="placement-value">от 6 457 р/ночь</strong>
-              <small class="placement-value-item">/ночь</small>
-              <img src="/img/star.svg" alt="4 звезды" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star_not.svg" alt="" class="placement-rating">
+              <div class="placement-room-price">
+                <small class="placement-value prefix">от</small>
+                <strong class="placement-value">от 6 457 р/ночь</strong>
+                <small class="placement-value-item">/ночь</small>
+              </div>
+              <div class="placement-room-star">
+                <img src="/img/star.svg" alt="4 звезды" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star_not.svg" alt="" class="placement-rating">
+              </div>
             </div>
             <h3 class="placement-hotel">Lagoona empujar la creativaded</h3>
             <div class="placement-geo">Барселона, Испания</div>
             <a href="" class="placement-rooms">Номера</a>
           </li>
-          <li>
+          <li class="placement-list-item">
             <img src="/img/31.jpg" alt="">
             <div class="star">
-              <small class="placement-value prefix">от</small>
-              <strong class="placement-value">от 6 490 р/ночь</strong>
-              <small class="placement-value-item">/ночь</small>
-              <img src="/img/star.svg" alt="4 звезды" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star_not.svg" alt="" class="placement-rating">
+              <div class="placement-room-price">
+                <small class="placement-value prefix">от</small>
+                <strong class="placement-value">от 6 490 р/ночь</strong>
+                <small class="placement-value-item">/ночь</small>
+              </div>
+              <div class="placement-room-star">
+                <img src="/img/star.svg" alt="4 звезды" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star_not.svg" alt="" class="placement-rating">
+              </div>
             </div>
             <h3 class="placement-hotel">Lagoona el retorno</h3>
             <div class="placement-geo">Барселона, Испания</div>
             <a href="" class="placement-rooms">Номера</a>
           </li>
-          <li>
+          <li class="placement-list-item">
             <img src="/img/27.jpg" alt="">
             <div class="star">
-              <small class="placement-value prefix">от</small>
-              <strong class="placement-value">от 6 505 р/ночь</strong>
-              <small class="placement-value-item">/ночь</small>
-              <img src="/img/star.svg" alt="5 звезды" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
+              <div class="placement-room-price">
+                <small class="placement-value prefix">от</small>
+                <strong class="placement-value">от 6 505 р/ночь</strong>
+                <small class="placement-value-item">/ночь</small>
+              </div>
+              <div class="placement-room-star">
+                <img src="/img/star.svg" alt="5 звезды" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+              </div>
             </div>
             <h3 class="placement-hotel">Lagoona enfermo termino</h3>
             <div class="placement-geo">Барселона, Испания</div>
             <a href="" class="placement-rooms">Номера</a>
           </li>
-          <li>
+          <li class="placement-list-item">
             <img src="/img/291.jpg" alt="">
             <div class="star">
-              <small class="placement-value prefix">от</small>
-              <strong class="placement-value"> от 6 824 р/ночь</strong>
-              <small class="placement-value-item">/ночь</small>
-              <img src="/img/star.svg" alt="4 звезды" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star.svg" alt="" class="placement-rating">
-              <img src="/img/star_not.svg" alt="" class="placement-rating">
+              <div class="placement-room-price">
+                <small class="placement-value prefix">от</small>
+                <strong class="placement-value"> от 6 824 р/ночь</strong>
+                <small class="placement-value-item">/ночь</small>
+              </div>
+              <div class="placement-room-star">
+                <img src="/img/star.svg" alt="4 звезды" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star.svg" alt="" class="placement-rating">
+                <img src="/img/star_not.svg" alt="" class="placement-rating">
+              </div>
             </div>
             <h3 class="placement-hotel">Lagoona suerte siguio</h3>
             <div class="placement-geo">Барселона, Испания</div>
             <a href="" class="placement-rooms">Номера</a>
           </li>
-          <li>
+          <li class="placement-list-item">
             <img src="/img/41.jpg" alt="">
             <a href="" class="placement-go-all-hotel">Посмотреть все варианты ></a>
           </li>
