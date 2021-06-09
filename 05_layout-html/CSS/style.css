@@ -2,11 +2,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f0f0f0;
+}
+
 h2 {
   font-size: 40px;
 }
 
-p. {
+p {
   font-size: 16px;
 }
 
@@ -37,6 +41,9 @@ html {
 }
 
 /* header */
+.header {
+  padding: 30px 0 35px 0;
+}
 
 .header-logo {
   display: flex;
@@ -86,7 +93,7 @@ html {
 /* hero */
 
 .section-hero {
-  margin-top: 50px;
+  padding: 35px 0;
 
 }
 
@@ -115,28 +122,36 @@ html {
 }
 
 .hero-right-sale {
+  display: flexbox;
   background-image: url(../img/22.jpg);
   min-height: 540px;
+  padding: 40px;
 }
 
 .h3-hero {
+  color: #ffffff;
+  font-size: 66px;
   margin: auto;
 }
 
 /* about us */
+.section-about-us {
+  padding: 35px 0;
+}
 
 .about-us-container {
-  margin-top: 60px;
   padding-left: 40px;
   padding-right: 245px;
 }
 
 
 /* services */
+.services {
+  padding: 35px 0;
+}
 
 .services-container {
   box-sizing: border-box;
-  margin-top: 95px;
   margin-right: auto;
   margin-left: auto;
 
@@ -155,7 +170,10 @@ html {
 
 .services-list-item {
   min-width: 570px;
-  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  min-width: 570px;
+  min-height: 320Spx;
 }
 
 .services-list-item:not(:nth-child(2n)) {
@@ -167,6 +185,9 @@ html {
 }
 
 /* advantages */
+.advantages {
+  padding: 35px 0;
+}
 
 .advantages-h2 {
   margin-left: 40px;
@@ -179,7 +200,10 @@ html {
 }
 .advantages-list-item {
   width: 270px;
-  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  min-width: 270;
+  min-height: 280px;
 }
 
 .advantages-description {
@@ -191,6 +215,9 @@ html {
 }
 
 /* placement */
+.placement {
+  padding: 35px 0;
+}
 
 .placement-h2 {
   margin-left: 40px;
@@ -203,8 +230,11 @@ html {
 }
 
 .placement-list-item {
-  margin-top: 20px;
+  margin-bottom: 20px;
   max-width: 370px;
+  background-color: #ffffff;
+  min-height: 440px;
+  min-width: 370px;
 }
 
 .placement-list-item:not(:nth-child(3n)) {
